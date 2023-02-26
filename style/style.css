@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* HTML INDEX */
+body{
+    background-color:antiquewhite
+}
+header .barras{
+    background-color: coral;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size:large;
+    text-align:left;
+    font-size: 20px;
+    line-height: 20px;
+    color:black;
+    word-spacing: 3px;
+}
+.titulo{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: blue;
+}
+.h1{
+    margin: 50px;
+    text-align: center;
+    color: brown;
+    font-size: 40px;
+}
+.comienzo p {
+    text-align: justify;
+}
+nav{
+    display: flex;
+    background-color: coral;
+    justify-content: space-around;
+    flex-direction: row;
+}
+nav li{
+    display: inline-block;
+    margin: 20px;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 25px;
+}
+.multi{
+    border: 20px groove gold;
+    margin: 50px;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start; 
+}
+.logo img{ 
+    display: flex;
+    height: 100px;
+    margin: 10px 800px;
+}
+.descripcionmanga{
+    font-style: italic;
+    color: brown;
+    font-size: 30px;
+    text-align: center;
+    height: 500px;
+}
+img {
+    display: flex;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+} 
+article{
+    margin: 5px;
+    padding: 5px;
+    text-align: justify;
+}
+.h2{ 
+    margin: 50px;
+    color: brown;
+    text-align: center;
+}
+.reparto li{
+    text-align: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20 px;
+}
+/* GRID INDEX*/
+.parte1{ 
+    grid-area: trailer1;
+}
+.parte2{
+    grid-area: trailer2;
+}
+.parte3{
+    grid-area: trailer3;
+}
+.trailer{
+    border: 10px groove rgb(23, 95, 136);
+    margin: 15px;
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.videos{
+    display: flex;
+}
+.reparto{
+    display: grid;
+    grid-template-columns: auto(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "1" ;
+    margin: 50px;
+    color: black;
+    font-size: 20px;
+}
+/* HTML HISTORIA */
+.historia{
+    font-size: 30px;
+    font-style: oblique;
+    text-align: center;
+    font-style: border;
+}
+/* HTML SOUNDTRACKS  */
+.multiv{
+    border: 20px groove gold;
+    margin: 50px;
+    padding: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.comienzo{ 
+    margin: 20px;
+    padding: 20px;
+}
+.inicio{
+    display: flex;
+justify-content: space-around;
+height: 340px;
+border: red groove;
+margin: 20px;
+}
+
+.subtitulo{
+    text-align: center;
+    text-decoration: double;
+    margin: 50px;
+}
+/* HTML PERSONAJES */
+.recuadro img{
+    display: flex;
+    border: 5px rgba(139, 139, 194, 0.671) ridge;
+    height: 250px;
+    width: 250px;
+}
+.descripcionpersonajes{
+    display: flex;
+    display: inline-block;
+}
+.recuadro{
+    display: inline-block;
+}
+.descripcion{
+    font-style: italic;
+    color: brown;
+    font-size: 30px;
+    text-align: center;
+    height: 50px;
+}
+/* GRID  personajes */
+.personajes{ 
+    margin: 50px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 550px;
+    border: 20px cyan groove;
+}
