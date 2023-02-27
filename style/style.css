@@ -5,7 +5,8 @@
 }
 /* HTML INDEX */
 body{
-    background-color:antiquewhite
+    background: rgb(255,220,188);
+    background: linear-gradient(90deg, rgba(255,220,188,1) 100%, rgba(148,187,233,1) 100%);
 }
 header .barras{
     background-color: coral;
@@ -94,14 +95,13 @@ article{
     color: brown;
     text-align: center;
 }
-.reparto li{
-    text-align: left;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 20px;
-    padding: 20 px;
-}
 /* GRID INDEX*/
+.reparto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 50px;
+    font-size: 20px;
+}
 .parte1{ 
     grid-area: trailer1;
 }
@@ -122,14 +122,12 @@ article{
 .videos{
     display: flex;
 }
-.reparto{
-    display: grid;
-    grid-template-columns: auto(6, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: "1" ;
-    margin: 50px;
-    color: black;
-    font-size: 20px;
+.actores:hover{
+    background-color: aquamarine;
+}
+.actores2:hover{
+    background: rgb(228,163,151);
+background: linear-gradient(90deg, rgba(228,163,151,1) 100%, rgba(148,187,233,1) 100%);
 }
 /* HTML HISTORIA */
 .historia{
@@ -189,7 +187,6 @@ margin: 20px;
 /* GRID  personajes */
 .personajes{ 
     margin: 50px;
-    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 550px;
