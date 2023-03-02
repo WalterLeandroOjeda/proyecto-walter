@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="shortcut icon" href="../img/logoaoharuride.ico"> 
     <title>Banda Sonora</title>
@@ -11,21 +13,22 @@
 <body>
     <header>
         <figure class="logo">
-            <a href="../index.html"><img src="../img/logoaoharuride.webp" alt="nombre manga ao haru ride"></a>
+            <a href="../index.html"><img data-aos="flip-left" src="../img/logoaoharuride.webp" class="rounded mx-auto d-block" alt="nombre manga ao haru ride"></a>
         </figure>
-        <nav class="nav">
-            <ul>
-                <li>
-                    <a href="../pages/historia.html">Historia</a> </li>
-                <li>
-                    <a href="../pages/personajes.html">Personajes</a></li>
-                <li>
-                    <a href="../index.html">Inicio</a></li>
-                <li>
-                    <a href="../pages/mangas.html">Mangas</a></li>
-                <li>
-                    <a href="../pages/banda sonora.html">Banda Sonora</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+            <a class="nav-link active" href="../index.html">Inicio</a>
+            <a class="nav-link active" href="historia.html">Historia</a>
+            <a class="nav-link active" href="personajes.html">Personajes</a>
+            <a class="nav-link active" href="mangas.html">Mangas</a>
+            <a class="nav-link active" href="banda sonora.html">Banda Sonora</a>
+            </div>
+            </div>
         </nav>
 </header>
 <main>
@@ -41,10 +44,16 @@
         </div>
         <div> 
         <h2 class="descripcion">ENDING</h2>
-            <iframe class="sound" width="560" height="315" src="https://www.youtube.com/embed/oaS4bOwMlxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sp3bwmAVvV4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 </section>
 </main>
-<footer></footer>
+<footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+            </script>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -5,7 +5,6 @@
 }
 /* HTML INDEX */
 body{
-    background: rgb(255,220,188);
     background: linear-gradient(90deg, rgba(255,220,188,1) 100%, rgba(148,187,233,1) 100%);
 }
 header .barras{
@@ -46,17 +45,20 @@ p{
 .comienzo p {
     text-align: justify;
 }
-nav{
+.navbar{
+    padding: 0px;
+}
+nav div{
     display: flex;
     background-color: coral;
     justify-content: space-around;
     flex-direction: row;
+    font-size: 20px;
 }
-nav li{
+nav a{
     display: inline-block;
     margin: 20px;
     font-style: italic;
-    font-size: 20px;
     line-height: 25px;
 }
 .multi{
