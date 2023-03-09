@@ -81,6 +81,9 @@ nav a{
     text-align: center;
     height: 500px;
 }
+.inicioimg{
+    height: 300px;
+}
 img {
     display: flex;
     height: 300px;
@@ -98,7 +101,45 @@ article{
     text-align: center;
 }
 /* GRID INDEX*/
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+figure .inicioimg{
+    grid-area: central;
+}
+.comienzo{
+    grid-area: texto;
+}
+.trailer{
+    grid-area: videos;
+}
+.informacion{
+    grid-area: info;
+}
+.articulo{
+    grid-area: articulo;
+}
 .reparto{
+    grid-area: reparto;
+}
+.planillageneral{
+    display: grid;
+    gap:20px ;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "central"
+    "texto"
+    "videos"
+    "info"
+    "articulo"
+    "reparto"
+    ;
+}
+/* .reparto{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     margin: 50px;
@@ -130,7 +171,7 @@ article{
 .actores2:hover{
     background: rgb(228,163,151);
 background: linear-gradient(90deg, rgba(228,163,151,1) 100%, rgba(148,187,233,1) 100%);
-}
+} */
 /* HTML HISTORIA */
 .historia{
     font-size: 30px;
