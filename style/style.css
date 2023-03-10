@@ -78,7 +78,7 @@ nav a{
     color: brown;
     font-size: 30px;
     text-align: center;
-    height: 500px;
+    height: 650px;
 }
 .inicioimg{
     width: 300px;
@@ -139,7 +139,6 @@ background: linear-gradient(90deg, rgba(228,163,151,1) 100%, rgba(148,187,233,1)
     height: 340px;
     margin: 20px;
 }
-
 .subtitulo{
     text-align: center;
     text-decoration: double;
@@ -175,10 +174,24 @@ background: linear-gradient(90deg, rgba(228,163,151,1) 100%, rgba(148,187,233,1)
 /* Mangas */
 .multi{
     border: groove gold;
-    margin: 50px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: center;
+    grid-template-rows: 500px;
+}
+.descripcionmanga h3{
+    font-size: medium;
+    padding: 10px;
+    margin: 10px;
+}
+.descripcionmanga figure{
+    display: flex;
+    height: 50%;
+    margin-left: 10%;
+    padding: 10px;
+}
+.textotomo{
+    text-align: center;
 }
 @media (min-width:500px){
     .inicioimg{
@@ -186,9 +199,28 @@ background: linear-gradient(90deg, rgba(228,163,151,1) 100%, rgba(148,187,233,1)
     .inicio{
         border:5px red groove;}
     }
+    .multi{
+        border: groove gold;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 650px;
+    }
+    .descripcionmanga figure{
+        display: flex;
+        height: 50%;
+        margin-left: 25%;
+        padding: 10px;
+    }
+
 @media (min-width:756px){
     .inicioimg{
         width: 870px;}
+    .multi{
+            border: groove gold;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 700px;
+    }
 /* Personajes */
 .personajes{ 
     display: grid;
@@ -209,11 +241,16 @@ background: linear-gradient(90deg, rgba(228,163,151,1) 100%, rgba(148,187,233,1)
         }
     /* Mangas */
     .multi{
-    border: groove gold;
-    margin: 50px;
+        border: groove gold;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 650px;
+    }
+.multi div{ 
+    border: groove white;
+}
+.descripcionmanga figure{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;}
-.multi div{ border: groove white;}
+    height: 300px;
+    padding: 10px;}
 }
