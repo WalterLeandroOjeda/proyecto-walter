@@ -65,6 +65,9 @@ nav a{
     font-style: italic;
     line-height: 25px;
 }
+.videos{
+    margin-top: 10px;
+}
 .logo img{ 
     display: flex;
     height: 100px;
@@ -96,67 +99,6 @@ article{
     color: brown;
     text-align: center;
 }
-/* GRID INDEX*/
-/* header{
-    grid-area: header;
-}
-nav{
-    grid-area: nav;
-}
-figure .inicioimg{
-    grid-area: central;
-}
-.comienzo{
-    grid-area: texto;
-}
-.trailer{
-    grid-area: videos;
-}
-.informacion{
-    grid-area: info;
-}
-.articulo{
-    grid-area: articulo;
-}
-.reparto{
-    grid-area: reparto;
-}
-.planillageneral{
-    display: grid;
-    gap:20px ;
-    grid-template-areas: 
-    "header"
-    "nav"
-    "central"
-    "texto"
-    "videos"
-    "info"
-    "articulo"
-    "reparto"
-    ; */
-/* .reparto{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin: 50px;
-    font-size: 20px;
-}
-.parte1{ 
-    grid-area: trailer1;
-}
-.parte2{
-    grid-area: trailer2;
-}
-.parte3{
-    grid-area: trailer3;
-}
-.trailer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.videos{
-    display: flex;
-} */
 .actores:hover{
     background-color: aquamarine;
 }
@@ -187,10 +129,9 @@ background: linear-gradient(90deg, rgba(228,163,151,1) 100%, rgba(148,187,233,1)
 }
 .inicio{
     display: flex;
-justify-content: space-around;
-height: 340px;
-border: red groove;
-margin: 20px;
+    justify-content: space-around;
+    height: 340px;
+    margin: 20px;
 }
 
 .subtitulo{
@@ -220,38 +161,9 @@ margin: 20px;
     height: 50px;
 }
 /* GRID  personajes */
-.futaba{
-    grid-area: futaba;
-}
-.kou{ 
-    grid-area: kou;
-}
-.makita{
-    grid-area: makita;
-}
-.shuko{
-    grid-area: shuko;
-}
-.kominato{
-    grid-area: kominato;
-}
-.touma{ 
-    grid-area: touma;
-}
-.yumi{
-    grid-area: yumi;
-}
 .personajes{ 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    "futaba"
-    "kou"
-    "makita"
-    "shuko"
-    "kominato"
-    "touma"
-    "yumi";
     grid-template-rows: 550px;
 }
 /* Mangas */
@@ -261,4 +173,41 @@ margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+@media (min-width:500px){
+    .inicioimg{
+        width: 100%;}
+    .inicio{
+        border:5px red groove;}
+    }
+@media (min-width:756px){
+    .inicioimg{
+        width: 870px;}
+/* Personajes */
+.personajes{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;}
+}
+@media (min-width:1200px){
+    /* index */
+    .inicioimg{
+        width: 870px;}
+    /* personajes */
+        .personajes{ 
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 600px;}
+        .personajes div{
+            border: 5px groove cyan;
+        }
+    /* Mangas */
+    .multi{
+    border: groove gold;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;}
+.multi div{ border: groove white;}
 }
