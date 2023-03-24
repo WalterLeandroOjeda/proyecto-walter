@@ -1,0 +1,53 @@
+@media (min-width:500px) {
+	.inicioimg {
+		width: 100%;
+	}
+	.inicio {
+		border: 5px red groove;
+	}
+}
+@media (min-width:756px) {
+	.inicioimg {
+		width: 870px;
+	}
+	.multi {
+		border: groove gold;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 700px;
+	}
+	.personajes {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 500px;
+	}
+}
+@media (min-width:1200px) {
+	.inicioimg {
+		width: 870px;
+	}
+	.personajes {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 600px;
+		div {
+			border: 5px groove cyan;
+		}
+	}
+	.multi {
+		border: groove gold;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 650px;
+		div {
+			border: groove white;
+		}
+	}
+	.descripcionmanga {
+		figure {
+			display: flex;
+			height: 300px;
+			padding: 10px;
+		}
+	}
+}

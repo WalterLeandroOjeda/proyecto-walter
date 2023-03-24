@@ -1,0 +1,16 @@
+.descripcionpersonajes {
+	display: flex;
+	display: inline-block;
+}
+.descripcion {
+	font-style: italic;
+	color: $color_3;
+	font-size: 30px;
+	text-align: center;
+	height: 50px;
+}
+.personajes {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 550px;
+}

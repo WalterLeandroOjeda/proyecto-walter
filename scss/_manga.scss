@@ -1,0 +1,51 @@
+.descripcionmanga {
+	font-style: italic;
+	color: $color_3;
+	font-size: 30px;
+	text-align: center;
+	height: 650px;
+	h3 {
+		font-size: medium;
+		padding: 10px;
+		margin: 10px;
+	}
+	figure {
+		display: flex;
+		height: 50%;
+		margin-left: 10%;
+		padding: 10px;
+		display: flex;
+		height: 50%;
+		margin-left: 25%;
+		padding: 10px;
+	}
+}
+
+.subtitulo {
+	text-align: center;
+	text-decoration: double;
+	margin: 50px;
+}
+.recuadro {
+	img {
+		display: flex;
+		border: 5px rgba(139, 139, 194, 0.671) ridge;
+		height: 250px;
+		width: 250px;
+	}
+	display: inline-block;
+}
+.multi {
+	border: groove gold;
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	grid-template-rows: 500px;
+	border: groove gold;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 650px;
+}
+.textotomo {
+	text-align: center;
+}
